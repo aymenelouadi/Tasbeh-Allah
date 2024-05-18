@@ -1,0 +1,375 @@
+::selection {
+    background-color: #ff0088;
+    color: #fff;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 15px;
+    background-color: #dddddd; /* يمكنك نقل خلفية body هنا إذا كنت بحاجة لذلك */
+}
+
+@import url("http://www.fontstatic.com/f=cocon-next-arabic");
+.title-inv {
+    max-width: 100%;
+    color: #007bff;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'cocon-next-arabic' sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.flex-container-ps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.279);
+}
+
+@media (min-width: 1px) and (max-width: 400px) {
+    .flex-container-ps {
+        width: 400px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+.title-inv-ps {
+    font-family: 'Cairo';
+    max-width: 100%;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+
+
+#svg-fcr {
+    margin-right: 5px;
+}
+
+#svg-fcr path {
+    fill: rgb(0, 185, 0);
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+.title {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: 900;
+    max-width: 100%;
+    height: 30px;
+    color: #007bff;
+    text-align: center;
+    line-height: 30px;
+}
+
+#har {
+    text-align: -webkit-center;
+}
+
+.app-body {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* لتوسيط النص داخل العناصر */
+    display: grid;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.app-body {
+        padding-top: 42px;
+        padding-bottom: 42px;
+}
+
+.select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+
+@import url('//fonts.googleapis.com/earlyaccess/notokufiarabic.css'); 
+.header-element {
+    font-family: 'Noto Kufi Arabic';
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.header-element:hover {
+    color: #0056b3;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.counter-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+
+.counter-display {
+    font-size: 48px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.chevron-up,
+.chevron-down {
+    width: 40px;
+    height: 40px;
+    background-color: #0088ffcc;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 20px #0088ff38;
+    transition: 0.3s;
+
+}
+
+.chevron-up:hover,
+.chevron-down:hover {
+    background-color: #0088ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0088ff68;
+
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rippleEffect 0.6s linear;
+    z-index: 0;
+}
+
+@keyframes rippleEffect {
+    to {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+@import url("http://www.fontstatic.com/f=cocon-next-arabic");
+
+
+
+.sidebar {
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #252525;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+    transition: right 0.3s ease;
+    z-index: 999;
+    direction: ltr;
+    overflow-y: auto; /* تمكين التمرير العمودي عند الضرورة */
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+#h2-sidebar {
+    margin-top: 15px;
+    font-family: 'Cairo';
+    text-align: center;
+    color: hwb(348 0% 0%);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic'); 
+#h3-sidebar {
+    font-family: 'Changa';
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #2cd50e;
+}
+
+#p-sidebar {
+    font-family: 'cocon-next-arabic';
+    color: #ffffff;
+    text-align: center;
+}
+
+#strong-sidebar {
+    color: aqua;
+    margin-top: 5px;
+}
+
+.sidebar #h2-sidebar {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.sidebar #p-sidebar {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+@media (min-width: 1px) and (max-width: 400px) {
+    .flex-container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 400px) {
+    footer {
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span #a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span #a:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 80px) and (max-width: 312px) {
+    #har {
+        margin-top: 102px;
+        margin-bottom: 102px;
+    }
+}
+
+@media (min-width: 313px) and (max-width: 424px) {
+    #har {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    #har {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #har {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    #har {
+        margin-top: 110px;
+        margin-bottom: 110px;
+    }
+    .flex-container {
+        height: 15vh;
+    }
+}
+
+
+
+
+
